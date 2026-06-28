@@ -4,7 +4,7 @@ import Translate from "@docusaurus/Translate";
 import { renderToStaticMarkup } from "react-dom/server";
 import { CoreServerData } from "../types";
 
-  const translate = (id: string, message: string, description?: string) => {
+  export const translate = (id: string, message: string, description?: string) => {
     return renderToStaticMarkup(
       <Translate id={id} description={description}>{message}</Translate>
     );

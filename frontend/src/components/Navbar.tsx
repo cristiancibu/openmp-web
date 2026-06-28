@@ -4,6 +4,7 @@ import { useLocation } from "@docusaurus/router"; // Import Docusaurus's router 
 import Translate from "@docusaurus/Translate";
 import clsx from "clsx";
 import styles from "./Navbar.module.css";
+import { translate } from "./ServerRow";
 
 const socials = [
   {
@@ -115,6 +116,12 @@ const OpenMPNavbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.left}>
           <Link to="/" className={styles.logo}>
+          <img
+              src="/images/assets/logo-light-trans.svg"
+              alt="open.mp server"
+              title={translate("serverRow.ompTitle", "open.mp server", "open.mp server badge title")}
+              className="server-badge-image"
+            />
             open<span className={styles.logoAccent}>.mp</span>
           </Link>
         </div>
