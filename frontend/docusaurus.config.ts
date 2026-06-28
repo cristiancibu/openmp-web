@@ -121,6 +121,7 @@ const config: Config = {
         },
       };
     },
+    "./src/plugins/tailwind-config.js"
   ],
 
   presets: [

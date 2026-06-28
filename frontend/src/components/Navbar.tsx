@@ -115,13 +115,15 @@ const OpenMPNavbar = () => {
     <header className={styles.navbarWrapper}>
       <nav className={styles.navbar}>
         <div className={styles.left}>
-          <Link to="/" className={styles.logo}>
           <img
               src="/images/assets/logo-light-trans.svg"
               alt="open.mp server"
+              width={32}
+              height={32}
               title={translate("serverRow.ompTitle", "open.mp server", "open.mp server badge title")}
-              className="server-badge-image"
+              className="server-badge-image mr-2"
             />
+          <Link to="/" className={styles.logo}>
             open<span className={styles.logoAccent}>.mp</span>
           </Link>
         </div>
